@@ -1,7 +1,57 @@
 @import "./variables";
 @import "./normalize.scss";
 @import "./reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  background-color: $LIGHT_GRAY;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-card {
+  width: 325px;
+  height: 495px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+  gap: 20px;
+  align-items: center;
+  border-radius: 12px;
+  background-color: $WHITE;
+  font-family: "Outfit";
+  font-size: 15px;
+  line-height: normal;
+
+  &__img {
+    width: 288px;
+    height: 286px;
+    border-radius: 12px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    text-align: center;
+    gap: 18px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-weight: 400;
+    color: $GRAYISH_BLUE;
+  }
 }
